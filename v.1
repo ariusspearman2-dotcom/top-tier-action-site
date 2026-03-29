@@ -1,0 +1,327 @@
+export default function TopTierActionWebsite() {
+  const services = [
+    {
+      title: "Media & Visuals",
+      desc: "Photo, video, branded visuals, and creative content support for businesses, artists, and events.",
+    },
+    {
+      title: "Drone Services",
+      desc: "Aerial footage, inspection support, real estate visuals, and high-perspective content for premium presentation.",
+    },
+    {
+      title: "Service Operations",
+      desc: "A growing umbrella built to support practical service branches, reliable operators, and long-term expansion.",
+    },
+  ];
+
+  const team = [
+    {
+      name: "Arius Spearman Jr.",
+      role: "Founder / Creative Lead",
+      bio: "Vision, direction, partnerships, brand building, and growth strategy.",
+      links: ["Instagram", "Portfolio", "Contact"],
+    },
+    {
+      name: "Featured Operator",
+      role: "Independent Contractor",
+      bio: "A trusted specialist operating within the Top Tier Action network.",
+      links: ["Instagram", "Work", "Book"],
+    },
+    {
+      name: "Featured Operator",
+      role: "Independent Contractor",
+      bio: "Additional collaborators and future operators can be featured here as the company grows.",
+      links: ["Instagram", "Work", "Book"],
+    },
+  ];
+
+  return (
+    <div className="min-h-screen bg-neutral-950 text-white">
+      <section className="relative overflow-hidden border-b border-white/10">
+        <div className="absolute inset-0 bg-gradient-to-br from-white/5 via-transparent to-white/0" />
+        <div className="mx-auto max-w-7xl px-6 py-20 md:px-10 md:py-28">
+          <div className="grid items-center gap-12 md:grid-cols-2">
+            <div>
+              <div className="mb-4 inline-flex items-center rounded-full border border-white/15 px-3 py-1 text-sm text-white/70">
+                Top Tier Action
+              </div>
+              <h1 className="max-w-2xl text-4xl font-semibold tracking-tight md:text-6xl">
+                Built for action.
+              </h1>
+              <p className="mt-6 max-w-xl text-base leading-7 text-white/70 md:text-lg">
+                Top Tier Action is a growing team focused on getting things done — across media, aerial, and on-the-ground work.
+              </p>
+              <div className="mt-8 flex flex-wrap gap-4">
+                <a
+                  href="#services"
+                  className="rounded-2xl bg-white px-5 py-3 text-sm font-medium text-black transition hover:scale-[1.02]"
+                >
+                  See the work
+                </a>
+                <a
+                  href="#team"
+                  className="rounded-2xl border border-white/15 px-5 py-3 text-sm font-medium text-white/90 transition hover:bg-white/5"
+                >
+                  View Operators
+                </a>
+              </div>
+            </div>
+
+            <div className="grid gap-4">
+              <div className="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur">
+                <p className="text-sm uppercase tracking-[0.25em] text-white/45">Vision</p>
+                <p className="mt-3 text-lg leading-8 text-white/85">
+                  A reliable team delivering media, aerial, and on-the-ground services — with room to grow as your needs evolve.
+                </p>
+              </div>
+              <div className="grid gap-4 sm:grid-cols-2">
+                <div className="rounded-3xl border border-white/10 bg-white/5 p-6">
+                  <p className="text-sm uppercase tracking-[0.25em] text-white/45">Structure</p>
+                  <p className="mt-3 text-white/80">Owners, operators, independent contractors, and specialized roles.</p>
+                </div>
+                <div className="rounded-3xl border border-white/10 bg-white/5 p-6">
+                  <p className="text-sm uppercase tracking-[0.25em] text-white/45">Growth</p>
+                  <p className="mt-3 text-white/80">Built to add trusted people, branches, and systems over time.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" className="mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-24">
+        <div className="mb-10 max-w-2xl">
+          <p className="text-sm uppercase tracking-[0.25em] text-white/45">What we do</p>
+          <h2 className="mt-3 text-3xl font-semibold md:text-4xl">Simple for now. Built to expand.</h2>
+          <p className="mt-4 text-white/65">
+            Core services today, with room to grow as the network expands.
+          </p>
+        </div>
+
+        <div className="grid gap-6 md:grid-cols-3">
+          {services.map((service) => (
+            <div key={service.title} className="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-2xl shadow-black/20">
+              <h3 className="text-xl font-medium">{service.title}</h3>
+              <p className="mt-3 leading-7 text-white/70">{service.desc}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="border-y border-white/10 bg-white/5">
+        <div className="mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-24">
+          <div className="grid gap-8 md:grid-cols-[1.2fr_0.8fr]">
+            <div>
+              <p className="text-sm uppercase tracking-[0.25em] text-white/45">Why this matters</p>
+              <h2 className="mt-3 text-3xl font-semibold md:text-4xl">Not just a service page. A base of operations.</h2>
+              <p className="mt-5 max-w-3xl text-white/70 leading-8">
+                We keep things simple on purpose. Strong work, reliable people, and room to grow.
+              </p>
+            </div>
+            <div className="rounded-3xl border border-white/10 bg-neutral-950 p-6">
+              <p className="text-sm uppercase tracking-[0.25em] text-white/45">Link hub idea</p>
+              <ul className="mt-4 space-y-3 text-white/75">
+                <li>• Main Top Tier Action site</li>
+                <li>• Owner / operator profiles</li>
+                <li>• Social links or Linktree-style buttons</li>
+                <li>• Future branch pages as they launch</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="team" className="mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-24">
+        <div className="mb-10 max-w-2xl">
+          <p className="text-sm uppercase tracking-[0.25em] text-white/45">Featured people</p>
+          <h2 className="mt-3 text-3xl font-semibold md:text-4xl">Operators in the network.</h2>
+          <p className="mt-4 text-white/65">
+            Founders, contractors, and operators working within the network.
+          </p>
+        </div>
+
+        <div className="grid gap-6 md:grid-cols-3">
+          {team.map((person) => (
+            <div key={person.name + person.role} className="rounded-3xl border border-white/10 bg-white/5 p-6">
+              <div className="mb-5 h-40 rounded-2xl border border-dashed border-white/10 bg-neutral-900/80 flex items-center justify-center text-white/30">
+                Photo / Logo Area
+              </div>
+              <h3 className="text-xl font-medium">{person.name}</h3>
+              <p className="mt-1 text-sm uppercase tracking-[0.18em] text-white/45">{person.role}</p>
+              <p className="mt-4 leading-7 text-white/70">{person.bio}</p>
+              <div className="mt-5 flex flex-wrap gap-2">
+                {person.links.map((link) => (
+                  <button
+                    key={link}
+                    className="rounded-full border border-white/15 px-3 py-1.5 text-sm text-white/80 hover:bg-white/5"
+                  >
+                    {link}
+                  </button>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 pb-20 md:px-10 md:pb-24">
+        <div className="rounded-[2rem] border border-white/10 bg-gradient-to-br from-white/10 to-white/5 p-8 md:p-10">
+          <div className="grid gap-8 md:grid-cols-[1.1fr_0.9fr] md:items-center">
+            <div>
+              <p className="text-sm uppercase tracking-[0.25em] text-white/45">Next step</p>
+              <h2 className="mt-3 text-3xl font-semibold md:text-4xl">Start here. Build from there.</h2>
+              <p className="mt-4 max-w-2xl leading-8 text-white/75">
+                This first version establishes presence, explains the umbrella, and creates room
+                for the business to scale. Later, you can add service detail pages, booking,
+                project galleries, branch-specific branding, and the deeper Spaceman layer when
+                you are ready.
+              </p>
+            </div>
+            <div className="flex flex-col gap-3">
+              <a href="#" className="rounded-2xl bg-white px-5 py-3 text-center text-sm font-medium text-black">
+                Contact Top Tier Action
+              </a>
+              <a href="#team" className="rounded-2xl border border-white/15 px-5 py-3 text-center text-sm font-medium text-white/90">
+                View Featured People
+              </a>
+            </div>
+          </div>
+        </div>
+            </section>
+
+      <section id="pricing" className="mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-24">
+        <div className="mb-10 max-w-2xl">
+          <p className="text-sm uppercase tracking-[0.25em] text-white/45">Pricing</p>
+          <h2 className="mt-3 text-3xl font-semibold md:text-4xl">Simple. Clear. Built to scale.</h2>
+          <p className="mt-4 text-white/65">
+            Starting points for projects. Final pricing depends on scope, time, and creative direction.
+          </p>
+        </div>
+
+        <div className="grid gap-6 md:grid-cols-3">
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-6">
+            <h3 className="text-xl font-medium">Basic Video</h3>
+            <p className="mt-2 text-white/50">Starting at</p>
+            <p className="mt-1 text-2xl font-semibold">$250–$300</p>
+            <ul className="mt-4 space-y-2 text-white/70 text-sm">
+              <li>• 1–2 hour shoot</li>
+              <li>• Basic edit</li>
+              <li>• Quick turnaround</li>
+            </ul>
+          </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-6">
+            <h3 className="text-xl font-medium">Standard Package</h3>
+            <p className="mt-2 text-white/50">Starting at</p>
+            <p className="mt-1 text-2xl font-semibold">$350–$500</p>
+            <ul className="mt-4 space-y-2 text-white/70 text-sm">
+              <li>• Shooting + full edit</li>
+              <li>• Creative direction</li>
+              <li>• 1–2 revisions</li>
+            </ul>
+          </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-6">
+            <h3 className="text-xl font-medium">Editing Only</h3>
+            <p className="mt-2 text-white/50">Starting at</p>
+            <p className="mt-1 text-2xl font-semibold">$150–$300</p>
+            <ul className="mt-4 space-y-2 text-white/70 text-sm">
+              <li>• Client-provided footage</li>
+              <li>• Full edit</li>
+              <li>• Optional revisions</li>
+            </ul>
+          </div>
+        </div>
+            </section>
+
+      <section id="portfolio" className="border-y border-white/10 bg-white/5">
+        <div className="mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-24">
+          <div className="mb-10 max-w-2xl">
+            <p className="text-sm uppercase tracking-[0.25em] text-white/45">Portfolio</p>
+            <h2 className="mt-3 text-3xl font-semibold md:text-4xl">Work in motion.</h2>
+            <p className="mt-4 text-white/65">
+              A few examples of the kind of work Top Tier Action can deliver. Replace these with real projects as they come in.
+            </p>
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-3">
+            {[
+              {
+                title: "Music Video",
+                type: "Creative Production",
+                desc: "Performance-based visuals, cinematic edits, and artist-focused direction.",
+              },
+              {
+                title: "Promo Shoot",
+                type: "Brand Content",
+                desc: "Clean visuals for products, businesses, launches, or social campaigns.",
+              },
+              {
+                title: "Aerial Feature",
+                type: "Drone / Visual Add-On",
+                desc: "High-angle shots that add range, movement, and a stronger final presentation.",
+              },
+            ].map((item) => (
+              <div key={item.title} className="rounded-3xl border border-white/10 bg-neutral-950/70 p-4">
+                <div className="mb-4 flex h-52 items-center justify-center rounded-2xl border border-dashed border-white/10 bg-white/5 text-sm text-white/30">
+                  Video / Photo Placeholder
+                </div>
+                <p className="text-xs uppercase tracking-[0.2em] text-white/40">{item.type}</p>
+                <h3 className="mt-2 text-xl font-medium">{item.title}</h3>
+                <p className="mt-3 leading-7 text-white/70">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="booking" className="mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-24">
+        <div className="grid gap-8 md:grid-cols-[0.9fr_1.1fr]">
+          <div>
+            <p className="text-sm uppercase tracking-[0.25em] text-white/45">Booking</p>
+            <h2 className="mt-3 text-3xl font-semibold md:text-4xl">What are we working on?</h2>
+            <p className="mt-4 max-w-xl leading-8 text-white/70">
+              Reach out with the type of work you need, your timeline, and any key details. This can be swapped with your real email, Instagram, or booking system later.
+            </p>
+            <div className="mt-6 space-y-3 text-white/75">
+              <p><span className="text-white/45">Email:</span> booking@toptieraction.com</p>
+              <p><span className="text-white/45">Instagram:</span> @toptieraction</p>
+              <p><span className="text-white/45">Response:</span> Usually within 24–48 hours</p>
+            </div>
+          </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-6 md:p-8">
+            <div className="grid gap-4 md:grid-cols-2">
+              <div>
+                <label className="mb-2 block text-sm text-white/55">Name</label>
+                <input className="w-full rounded-2xl border border-white/10 bg-neutral-950 px-4 py-3 text-white outline-none placeholder:text-white/25" placeholder="Your name" />
+              </div>
+              <div>
+                <label className="mb-2 block text-sm text-white/55">Project Type</label>
+                <input className="w-full rounded-2xl border border-white/10 bg-neutral-950 px-4 py-3 text-white outline-none placeholder:text-white/25" placeholder="Video, photo, drone..." />
+              </div>
+            </div>
+            <div className="mt-4 grid gap-4 md:grid-cols-2">
+              <div>
+                <label className="mb-2 block text-sm text-white/55">Budget</label>
+                <input className="w-full rounded-2xl border border-white/10 bg-neutral-950 px-4 py-3 text-white outline-none placeholder:text-white/25" placeholder="Estimated budget" />
+              </div>
+              <div>
+                <label className="mb-2 block text-sm text-white/55">Timeline</label>
+                <input className="w-full rounded-2xl border border-white/10 bg-neutral-950 px-4 py-3 text-white outline-none placeholder:text-white/25" placeholder="When you need it" />
+              </div>
+            </div>
+            <div className="mt-4">
+              <label className="mb-2 block text-sm text-white/55">Project Details</label>
+              <textarea className="min-h-[140px] w-full rounded-2xl border border-white/10 bg-neutral-950 px-4 py-3 text-white outline-none placeholder:text-white/25" placeholder="Tell us what you need." />
+            </div>
+            <button className="mt-5 rounded-2xl bg-white px-5 py-3 text-sm font-medium text-black transition hover:scale-[1.02]">
+              Start the job
+            </button>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  );
+}
